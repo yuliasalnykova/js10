@@ -1,0 +1,30 @@
+body{
+    background-image: url(https://oir.mobi/uploads/posts/2022-09/1662204874_20-oir-mobi-p-tsvetnie-koti-oboi-23.jpg);
+}
+
+form{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+table{
+    width: 1000px;
+    height: auto;
+    background-color: rgb(81, 129, 173);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(9, 47, 72);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

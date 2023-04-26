@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="coffe.css" rel="stylesheet">
+</head>
+<body>
+    <form id="form">
+        <table id="table">
+            <tr>
+                <td>
+                    <b>Доставка продукції:</b>
+                </td>
+            </tr>
+            <tr>
+                <td >ПІБ</td>
+                <td>
+                    <input type="text" id="person">
+                </td>
+            </tr>
+            <tr>
+                <td>Адреса</td>
+                <td>
+                    <input type="text" id="adr">
+                </td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>
+                    <input type="tel" id="phone">
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>
+                    <input type="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Яку каву хочете</td>
+                <td>
+                    <textarea id="coffee"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Кількість</td>
+                <td>
+                    <input type="number" id="quantity">
+                </td>
+            </tr>
+            <tr>
+                <td>Замовити</td>
+                <td>
+                    <button id="btn">тиць</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+<script>
+const form = document.getElementById('form');
+const table = document.getElementById('table');
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const person = document.getElementById('person').value;
+    const adr = document.getElementById('adr').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const coffee = document.getElementById('coffee').value;
+    const quantity = document.getElementById('quantity').value;
+    table.style.width = 'auto';
+    const newRow = table.insertRow(-1);
+    const cell1 = newRow.insertCell(0);
+    const cell2 = newRow.insertCell(1);
+    const cell3 = newRow.insertCell(2);
+    const cell4 = newRow.insertCell(3);
+    const cell5 = newRow.insertCell(4);
+    const cell6 = newRow.insertCell(5);
+
+    cell1.innerHTML = person;
+    cell2.innerHTML = adr;
+    cell3.innerHTML = phone;
+    cell4.innerHTML = email;
+    cell5.innerHTML = coffee;
+    cell6.innerHTML = quantity;
+    form.reset();
+});
+
+</script>
+
+</body>
+</html>
